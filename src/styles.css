@@ -1,0 +1,87 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+* {
+  font-family: sans-serif;
+  text-align: center;
+  padding:0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  width: 100%;
+  height:100%;
+  background: #0575E6;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, rgb(1, 10, 43), #0575E6);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, rgb(1, 10, 43), #0575E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-attachment: fixed;
+  
+  
+
+
+}
+.header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 100vw;
+  background-color: black;
+  background: hsla(0,0%,100%,.2);
+  color:white;
+  
+}
+.header span{
+  color: #05f7ff;
+}
+.Api{
+  width: 100vw;
+  height: 100vh;
+  padding: 10px;
+  
+ 
+}
+.Api .searchBox{
+  margin-top: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  
+}
+.searchBar{
+  text-align: left;
+  display: block;
+  min-width: 200px;
+  max-width: 400px;
+  width: 50%;
+  padding: 15px;
+  appearance: none;
+  background: none;
+  border: none;
+  border-bottom: 2px black solid;
+  outline: none;
+  background-color: none;
+  border-radius:16px;
+  box-shadow: 0 px 5ox rgba(0 ,0,0,0.2);
+  color: #313131;
+  font-size: 20px;
+  transition: 0.4s ease 
+}
+.searchBar::placeholder {
+  color: black;
+  opacity: 0.7; /* Firefox */
+}
+.searchBar:focus{
+  background-color :rgba(255,255,255,0.75);
+}
+.Api #descriptionDiv{
+  width: 60vw;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  
+}
+.Api #descriptionDiv .des{
+  margin-bottom: 10px;
+}
